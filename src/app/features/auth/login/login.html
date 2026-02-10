@@ -1,0 +1,46 @@
+<div class="auth-container">
+  <div class="auth-card">
+    
+    <div class="auth-header">
+      <h1 class="logo">Job<span class="highlight">Finder</span></h1>
+      <p>Heureux de vous revoir ! Connectez-vous.</p>
+    </div>
+
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      
+      <div class="input-group">
+        <input 
+          type="email" 
+          id="email" 
+          formControlName="email" 
+          required 
+        >
+        <label for="email">Adresse Email</label>
+        <div class="bar"></div>
+      </div>
+
+      <div class="input-group">
+        <input 
+          type="password" 
+          id="password" 
+          formControlName="password" 
+          required
+          autocomplete="off"
+        >
+        <label for="password">Mot de passe</label>
+        <div class="bar"></div>
+      </div>
+
+      <button type="submit" [disabled]="loginForm.invalid || isLoading">
+        <span *ngIf="!isLoading">SE CONNECTER</span>
+        <div *ngIf="isLoading" class="loader"></div>
+      </button>
+
+    </form>
+
+    <div class="auth-footer">
+      <p>Pas encore de compte ? <a routerLink="/register">Créer un compte</a></p>
+    </div>
+
+  </div>
+</div>

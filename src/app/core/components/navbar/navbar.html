@@ -1,0 +1,28 @@
+<nav class="navbar" *ngIf="authService.isLoggedIn()">
+  <div class="container">
+    
+    <a routerLink="/jobs" class="brand">Job<span class="highlight">Finder</span></a>
+
+    <ul class="nav-links">
+      <li>
+        <a routerLink="/jobs" routerLinkActive="active">
+          <i class="bi bi-briefcase"></i> Offres
+        </a>
+      </li>
+      <li>
+        <a routerLink="/favorites" routerLinkActive="active">
+          <i class="bi bi-heart"></i> Favoris
+        </a>
+      </li>
+      <li>
+        <a routerLink="/applications" routerLinkActive="active">
+          <i class="bi bi-send"></i> Candidatures
+        </a>
+      </li>
+    </ul>
+
+    <button (click)="logout()" class="btn-logout">
+      <i class="bi bi-box-arrow-right"></i> Déconnexion
+    </button>
+  </div>
+</nav>

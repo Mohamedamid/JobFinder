@@ -1,0 +1,179 @@
+$bg-dark: #0f1014;
+$card-bg: #1b1e23;
+$text-main: #ffffff;
+$text-muted: #8b9bb4;
+$orange: #ff512f;
+$yellow: #f09819;
+$error: #ff4757;
+$gradient: linear-gradient(to right, $orange, $yellow);
+
+:host {
+  font-family: 'Segoe UI', sans-serif;
+  display: block;
+}
+
+.auth-container {
+  min-height: 100vh;
+  width: 100%;
+  background-color: $bg-dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-image: radial-gradient(#2c3e50 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 450px;
+  background: $card-bg;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  animation: slideUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 30px;
+
+  .logo {
+    color: $text-main;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 5px;
+    
+    .highlight {
+      background: $gradient;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; 
+    }
+  }
+
+  p {
+    color: $text-muted;
+    font-size: 0.9rem;
+  }
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+
+  input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    color: $text-main;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    transition: 0.3s;
+
+    &:focus ~ label,
+    &:valid ~ label {
+      top: -20px;
+      font-size: 0.8rem;
+      color: $yellow;
+    }
+
+    &:focus ~ .bar:before,
+    &:focus ~ .bar:after {
+      width: 50%;
+    }
+  }
+
+  label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 1rem;
+    color: $text-muted;
+    pointer-events: none;
+    transition: 0.3s ease;
+  }
+
+  .bar { 
+    position: relative; 
+    display: block; 
+    width: 100%; 
+  }
+  
+  .bar:before, .bar:after {
+    content: '';
+    height: 2px; 
+    width: 0;
+    bottom: 0; 
+    position: absolute;
+    background: $gradient; 
+    transition: 0.3s ease all; 
+  }
+  .bar:before { left: 50%; }
+  .bar:after { right: 50%; }
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: $gradient;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.2s, box-shadow 0.3s;
+  text-transform: uppercase;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(240, 152, 25, 0.3);
+  }
+
+  &:disabled {
+    background: #444;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+}
+
+.auth-footer {
+  text-align: center;
+  margin-top: 25px;
+  color: $text-muted;
+  font-size: 0.9rem;
+
+  a {
+    color: $yellow;
+    font-weight: 600;
+    text-decoration: none;
+    &:hover { color: $orange; text-decoration: underline; }
+  }
+}
+
+.alert-error {
+  color: $error;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.loader {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255,255,255,0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes slideUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes spin { to { transform: rotate(360deg); } }

@@ -1,0 +1,70 @@
+<div class="auth-container">
+  <div class="auth-card">
+    
+    <div class="auth-header">
+      <h1 class="logo">Job<span class="highlight">Finder</span></h1>
+      <p>Créez votre profil pour postuler.</p>
+    </div>
+
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+      
+      <div class="input-group">
+        <input 
+          type="text" 
+          id="nom" 
+          formControlName="nom" 
+          required 
+          autocomplete="family-name"
+        >
+        <label for="nom">Nom</label>
+        <div class="bar"></div>
+      </div>
+
+      <div class="input-group">
+        <input 
+          type="text" 
+          id="prenom" 
+          formControlName="prenom" 
+          required 
+          autocomplete="given-name"
+        >
+        <label for="prenom">Prénom</label>
+        <div class="bar"></div>
+      </div>
+
+      <div class="input-group">
+        <input 
+          type="email" 
+          id="email" 
+          formControlName="email" 
+          required 
+          autocomplete="email"
+        >
+        <label for="email">Adresse Email</label>
+        <div class="bar"></div>
+      </div>
+
+      <div class="input-group">
+        <input 
+          type="password" 
+          id="password" 
+          formControlName="password" 
+          required
+        >
+        <label for="password">Mot de passe (Min. 6 car.)</label>
+        <div class="bar"></div>
+      </div>
+
+      <button type="submit" [disabled]="registerForm.invalid || isLoading">
+        <span *ngIf="!isLoading">CRÉER MON COMPTE</span>
+        <div *ngIf="isLoading" class="loader"></div>
+      </button>
+
+    </form>
+
+    <div class="auth-footer">
+      <p>Déjà inscrit ? <a routerLink="/login">Se connecter</a></p>
+    </div>
+
+  </div>
+</div>
