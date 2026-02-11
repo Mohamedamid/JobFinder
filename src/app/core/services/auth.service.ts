@@ -53,6 +53,6 @@ export class AuthService {
   }
 
   isLoggedIn(): boolean {
-    return !!localStorage.getItem('user_session');
+    return Boolean(localStorage.getItem('user_session'));
   }
 }
