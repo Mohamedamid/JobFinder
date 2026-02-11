@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+<div class="container">
+  
+  <div class="header-section" style="text-align: center;">
+    <h1 style="margin-bottom: 40px;">Trouvez votre prochain <span style="color: #f09819;">Job</span></h1>
+    <app-search-bar (searchEvent)="onSearch($event)"></app-search-bar>
+  </div>
+
+  <div *ngIf="isLoading()" style="text-align: center; color: #aaa;">
+    Chargement...
+  </div>
+
+  <div class="jobs-grid" *ngIf="!isLoading() && displayedJobs().length > 0">
+    <app-job-card *ngFor="let job of displayedJobs()" [job]="job"></app-job-card>
+  </div>
+
+  <div *ngIf="!isLoading() && displayedJobs().length === 0" style="text-align: center; color: #aaa;">
+    Aucune offre trouvée.
+  </div>
+
+  <div class="pagination" *ngIf="!isLoading() && filteredJobs().length > 0" style="display: flex; justify-content: center; gap: 20px; margin-top: 40px;">
+    <button (click)="changePage(currentPage() - 1)" [disabled]="currentPage() === 1">Précédent</button>
+    
+    <span style="color: white; align-self: center;">
+      Page {{ currentPage() }} / {{ totalPages() }}
+    </span>
+    
+    <button (click)="changePage(currentPage() + 1)" [disabled]="currentPage() === totalPages()">Suivant</button>
+  </div>
+
+</div>

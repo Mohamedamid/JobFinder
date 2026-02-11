@@ -1,0 +1,36 @@
+<div class="search-wrapper">
+  
+  <div class="form-group">
+    <div class="input-box">
+      <i class="bi bi-search"></i>
+      <input type="text" 
+             [(ngModel)]="keyword" 
+             (keyup.enter)="triggerSearch()"
+             placeholder="Titre, mots-clés ou entreprise">
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="input-box">
+      <i class="bi bi-geo-alt"></i>
+      <input type="text" 
+             [(ngModel)]="location" 
+             (keyup.enter)="triggerSearch()"
+             placeholder="Ville, région ou code postal">
+    </div>
+  </div>
+
+  <div class="actions">
+    <button *ngIf="keyword || location" 
+            (click)="reset()" 
+            class="btn-reset" 
+            title="Réinitialiser">
+      <i class="bi bi-trash3"></i>
+    </button>
+
+    <button (click)="triggerSearch()" class="btn-search">
+      Rechercher
+    </button>
+  </div>
+
+</div>

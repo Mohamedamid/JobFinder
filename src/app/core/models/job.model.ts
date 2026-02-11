@@ -8,6 +8,7 @@ export interface Job {
   tags: string[];
   location: string;
   created_at: number;
+  isFavorite: boolean;
 }
 
 export interface ArbeitnowResponse {

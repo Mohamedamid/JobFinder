@@ -1,0 +1,20 @@
+<div class="job-card">
+  <div class="header">
+    <div class="logo-placeholder">
+      {{ job.company_name.charAt(0) | uppercase }}
+    </div>
+    <div class="info">
+      <h3 [title]="job.title">{{ job.title }}</h3>
+      <p class="company">{{ job.company_name }}</p>
+    </div>
+  </div>
+
+  <div class="badges">
+    <span class="badge loc"><i class="bi bi-geo-alt"></i> {{ job.location }}</span>
+    <span *ngIf="job.remote" class="badge remote">Remote</span>
+  </div>
+
+  <div class="footer">
+    <a [href]="job.url" target="_blank" class="btn-view">Voir l'offre</a>
+</div>
+</div>

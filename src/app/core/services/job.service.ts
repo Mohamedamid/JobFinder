@@ -15,4 +15,20 @@ export class JobService {
       map(response => response.data)
     );
   }
+
+  toggleFav(job: Job): void {
+    job.isFavorite = !job.isFavorite;
+    this.saveFavorites();
+  }
+
+  private saveFavorites(): void {
+    const favorites = this.getFavorites();
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+  }
+
+  private getFavorites(): Job[] {
+    const favorites = localStorage.getItem('favorites');
+    return favorites ? JSON.parse(favorites) : [];
+  }
+
 }

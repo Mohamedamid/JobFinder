@@ -1,0 +1,121 @@
+.search-wrapper {
+  background-color: #1e2025; /* خلفية الكارطة */
+  padding: 20px;
+  border-radius: 12px; /* حواف دائرية شوية */
+  border: 1px solid #333;
+  
+  display: flex;
+  align-items: flex-end; /* باش يجيو مقادين من التحت */
+  gap: 15px; /* المسافة بين العناصر */
+  
+  max-width: 1000px;
+  margin: 0 auto 40px auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3); /* ضل كبير */
+}
+
+/* Label فوق كل Input */
+.form-group {
+  flex: 1; /* كياخدو المساحة */
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #f09819; /* البرتقالي */
+    font-size: 0.9rem;
+    margin-left: 5px;
+  }
+}
+
+/* صندوق الـ Input */
+.input-box {
+  display: flex;
+  align-items: center;
+  background-color: #2a2d35; /* لون داخل الـ Input */
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 0 15px;
+  height: 50px; /* طول ثابت */
+  transition: 0.3s;
+
+  &:focus-within {
+    border-color: #f09819; /* يولي برتقالي ملي تكتب */
+    background-color: #333;
+  }
+
+  i {
+    font-size: 1.2rem;
+    color: #888;
+    margin-right: 12px;
+  }
+
+  input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    
+    &::placeholder { color: #666; }
+  }
+}
+
+/* جهة البوطونات */
+.actions {
+  display: flex;
+  gap: 10px;
+  height: 50px; /* نفس طول الـ Inputs */
+}
+
+/* زر البحث الكبير */
+.btn-search {
+  background-color: #f09819;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+  height: 100%;
+
+  &:hover {
+    background-color: #d68515;
+    transform: translateY(-2px);
+  }
+}
+
+/* زر الـ Reset (مربع صغير) */
+.btn-reset {
+  background-color: #dc3545; /* أحمر */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  width: 50px; /* مربع */
+  height: 100%;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: #b02a37;
+  }
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .search-wrapper {
+    flex-direction: column; /* يرجعو فوق بعضياتهم */
+    align-items: stretch; /* يجبدو العرض كامل */
+    gap: 20px;
+  }
+
+  .actions {
+    margin-top: 10px;
+  }
+  
+  .btn-search { flex: 1; } /* البوطون ياخد العرض كامل */
+}

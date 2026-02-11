@@ -1,0 +1,82 @@
+import { Component, inject, OnInit, signal, computed } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { JobService } from '../../../../core/services/job.service';
+import { Job } from '../../../../core/models/job.model';
+import { JobCardComponent } from '../../components/job-card/job-card.component';
+import { SearchBarComponent } from '../search-bar/search-bar.component'; 
+import { NavbarComponent } from '../../../../core/components/navbar/navbar';
+
+@Component({
+  selector: 'app-job-search',
+  standalone: true,
+  imports: [CommonModule, JobCardComponent, SearchBarComponent, NavbarComponent],
+  templateUrl: './job-search.component.html',
+  styleUrl: './job-search.component.scss'
+})
+export class JobSearchComponent implements OnInit {
+  private jobService = inject(JobService);
+
+  allJobs = signal<Job[]>([]); 
+  
+  searchCriteria = signal({ term: '', loc: '' });
+
+  currentPage = signal(1);
+  itemsPerPage = 12;
+  isLoading = signal(true);
+
+  filteredJobs = computed(() => {
+    const jobs = this.allJobs();
+    const criteria = this.searchCriteria();
+    const term = criteria.term.toLowerCase().trim();
+    const loc = criteria.loc.toLowerCase().trim();
+
+    return jobs.filter(job => {
+      const matchTitle = job.title.toLowerCase().includes(term) || job.company_name.toLowerCase().includes(term);
+      const matchLoc = job.location.toLowerCase().includes(loc);
+      return matchTitle && matchLoc;
+    });
+  });
+
+  displayedJobs = computed(() => {
+    const jobs = this.filteredJobs();
+    const page = this.currentPage();
+    const start = (page - 1) * this.itemsPerPage;
+    const end = start + this.itemsPerPage;
+    
+    return jobs.slice(start, end);
+  });
+
+
+  totalPages = computed(() => Math.ceil(this.filteredJobs().length / this.itemsPerPage));
+
+  ngOnInit() {
+    this.loadJobs();
+  }
+
+  loadJobs() {
+    this.isLoading.set(true);
+    this.jobService.getJobs().subscribe({
+      next: (data) => {
+        this.allJobs.set(data);
+        this.isLoading.set(false);
+      },
+      error: (err) => {
+        console.error(err);
+        this.isLoading.set(false);
+      }
+    });
+  }
+
+  onSearch(criteria: { term: string, loc: string }) {
+    this.searchCriteria.set(criteria);
+    this.currentPage.set(1);
+  }
+
+  changePage(newPage: number) {
+    if (newPage >= 1 && newPage <= this.totalPages()) {
+      this.currentPage.set(newPage);
+    
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }
+}
