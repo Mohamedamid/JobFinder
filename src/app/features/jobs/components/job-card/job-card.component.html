@@ -24,6 +24,10 @@
     <span *ngIf="job.remote" class="badge remote">Remote</span>
   </div>
 
+  <div class="description">
+    <p [innerHTML]="job.description"></p>
+  </div>
+
   <div class="footer">
     <span class="date">Nouveau</span> 
     <a [href]="job.url" target="_blank" class="btn-view">Voir l'offre</a>

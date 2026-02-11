@@ -129,6 +129,23 @@ $heart-red: #ff4757;
   }
 }
 
+.description {
+  margin-bottom: 20px;
+  
+  p {
+    color: #b0b3b8;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0;
+    
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
 .footer {
   margin-top: auto;
   padding-top: 16px;
