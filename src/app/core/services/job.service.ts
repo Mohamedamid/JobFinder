@@ -1,7 +1,7 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, map } from 'rxjs';
-import { Job, ArbeitnowResponse } from '../models/job.model';
+import { Job, ArbeitnowResponse, Favorite } from '../models/job.model';
 
 @Injectable({
   providedIn: 'root'
@@ -9,6 +9,7 @@ import { Job, ArbeitnowResponse } from '../models/job.model';
 export class JobService {
   private http = inject(HttpClient);
   private API_URL = 'https://www.arbeitnow.com/api/job-board-api';
+  private FAV_API = 'http://localhost:3000/favoritesOffers';
 
   getJobs(): Observable<Job[]> {
     return this.http.get<ArbeitnowResponse>(this.API_URL).pipe(
@@ -16,19 +17,16 @@ export class JobService {
     );
   }
 
-  toggleFav(job: Job): void {
-    job.isFavorite = !job.isFavorite;
-    this.saveFavorites();
+  getFavorites(userId: number): Observable<Favorite[]> {
+    return this.http.get<Favorite[]>(`${this.FAV_API}?userId=${userId}`);
   }
 
-  private saveFavorites(): void {
-    const favorites = this.getFavorites();
-    localStorage.setItem('favorites', JSON.stringify(favorites));
+  addFavorite(fav: Favorite): Observable<Favorite> {
+    return this.http.post<Favorite>(this.FAV_API, fav);
   }
 
-  private getFavorites(): Job[] {
-    const favorites = localStorage.getItem('favorites');
-    return favorites ? JSON.parse(favorites) : [];
+  removeFavorite(id: number): Observable<any> {
+    return this.http.delete(`${this.FAV_API}/${id}`);
   }
 
 }

@@ -2,6 +2,8 @@ import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Router } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
+import * as FavActions from '../../../store/favorites/favorites.actions';
+import { Store } from '@ngrx/store';
 
 @Component({
   selector: 'app-navbar',
@@ -12,6 +14,7 @@ import { AuthService } from '../../services/auth.service';
 })
 export class NavbarComponent {
   authService = inject(AuthService);
+  private store = inject(Store);
   private router = inject(Router);
 
   login() {
@@ -19,6 +22,7 @@ export class NavbarComponent {
   }
 
   logout() {
+    this.store.dispatch(FavActions.clearFavorites());
     this.authService.logout();
     this.router.navigate(['/jobs']);
   }
