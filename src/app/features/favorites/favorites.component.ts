@@ -7,7 +7,8 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { NavbarComponent } from '../../shared/components/navbar/navbar';
 import { JobCardComponent } from '../jobs/components/job-card/job-card.component';
 import { AuthService } from '../../core/services/auth.service';
-import { Favorite, Job } from '../../core/models/job.model';
+import { Job } from '../../core/models/job.model';
+import { Favorite } from '../../core/models/favorite.model';
 import * as FavActions from '../../store/favorites/favorites.actions';
 
 @Component({

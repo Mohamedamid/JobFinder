@@ -1,5 +1,3 @@
-// Navbar component styles responsives avec tout les versions
-
 $bg-dark: #1b1e23;
 $text-light: #fff;
 $orange: #f09819;
@@ -72,12 +70,11 @@ $orange: #f09819;
     }
   }
 
-  /* LOGIN BUTTON (Jdid - Orange & Solid) */
   .btn-login {
     background-color: $orange;
     border: 1px solid $orange;
-    color: white; /* Ecriture blanche */
-    padding: 8px 25px; /* Chouiya 3rid 3la logout */
+    color: white;
+    padding: 8px 25px;
     border-radius: 15px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -86,12 +83,12 @@ $orange: #f09819;
     gap: 8px;
     font-size: 0.95rem;
     font-weight: 600;
-    box-shadow: 0 4px 15px rgba(240, 152, 25, 0.3); /* Glow effect */
+    box-shadow: 0 4px 15px rgba(240, 152, 25, 0.3);
 
     &:hover {
-      background-color: darken($orange, 10%); /* Ki-ghma9 chwiya */
+      background-color: darken($orange, 10%);
       border-color: darken($orange, 10%);
-      transform: translateY(-2px); /* Kaytla3 lfou9 chwiya */
+      transform: translateY(-2px);
       box-shadow: 0 6px 20px rgba(240, 152, 25, 0.4);
     }
 

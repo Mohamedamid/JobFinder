@@ -10,17 +10,3 @@ export interface Job {
   created_at: number;
   isFavorite: boolean;
 }
-
-export interface ArbeitnowResponse {
-  data: Job[];
-  meta: any;
-}
-
-export interface Favorite {
-  id?: number;
-  userId: number;
-  offerId: string;
-  title: string;
-  company: string;
-  location: string;
-}

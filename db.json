@@ -16,7 +16,48 @@
       "title": "Webentwickler (m/w/d)",
       "company": "AUTOHAUSEN AG",
       "location": "Offenburg"
+    },
+    {
+      "id": "0685",
+      "userId": "4",
+      "offerId": "praktikum-im-bereich-it-security-stuttgart-327110",
+      "title": "Praktikum im Bereich IT-Security",
+      "company": "Medialine EuroTrade AG",
+      "location": "Stuttgart"
+    },
+    {
+      "id": "ddc0",
+      "userId": "4",
+      "offerId": "sie-rechnen-jeden-monat-gehalter-ab-aber-was-ist-mit-ihrem-eigenen-lohnbuchhalter-in-koblenz-371392",
+      "title": "Sie rechnen jeden Monat Gehälter ab ... aber was ist mit Ihrem eigenen? Lohnbuchhalter (m/w/d) in Koblenz",
+      "company": "ADVIMED Koblenz Steuerberatungsgesellschaft mbH",
+      "location": "Koblenz"
     }
   ],
-  "applications": []
+  "applications": [
+    {
+      "id": "0cdc",
+      "userId": "4",
+      "offerId": "ausbildung-zum-fachinformatiker-fur-systemintegration-stuttgart-353238",
+      "title": "Ausbildung zum Fachinformatiker für Systemintegration (m/w/d)",
+      "company": "Medialine EuroTrade AG",
+      "location": "Stuttgart",
+      "url": "https://www.arbeitnow.com/jobs/companies/medialine-eurotrade-ag/ausbildung-zum-fachinformatiker-fur-systemintegration-stuttgart-353238",
+      "status": "accepte",
+      "notes": "",
+      "dateAdded": "2026-02-12T09:02:42.024Z"
+    },
+    {
+      "id": "90a0",
+      "userId": "4",
+      "offerId": "telemarketing-schorndorf-77381",
+      "title": "Telemarketing",
+      "company": "BLP Software GmbH",
+      "location": "Schorndorf",
+      "url": "https://www.arbeitnow.com/jobs/companies/blp-software-gmbh/telemarketing-schorndorf-77381",
+      "status": "en_attente",
+      "notes": "",
+      "dateAdded": "2026-02-12T09:03:07.872Z"
+    }
+  ]
 }

@@ -1,5 +1,5 @@
 import { createAction, props } from '@ngrx/store';
-import { Favorite } from '../../core/models/job.model';
+import { Favorite } from '../../core/models/favorite.model';
 
 export const loadFavorites = createAction('[Favorites] Load', props<{ userId: number }>());
 export const clearFavorites = createAction('[Favorites] Clear');

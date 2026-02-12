@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { Store } from '@ngrx/store';
 
-// Imports
 import { NavbarComponent } from '../../shared/components/navbar/navbar';
 import { AuthService } from '../../core/services/auth.service';
 import { Application } from '../../core/models/application.model';

@@ -1,4 +1,4 @@
-export type ApplicationStatus = 'en_attente' | 'accepte' | 'refuse';
+import { ApplicationStatus } from "./applicationStatus.model";
 
 export interface Application {
   id?: number;

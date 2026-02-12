@@ -1,7 +1,9 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, map } from 'rxjs';
-import { Job, ArbeitnowResponse, Favorite } from '../models/job.model';
+import { Job} from '../models/job.model';
+import { Favorite } from '../models/favorite.model';
+import { ArbeitnowResponse } from '../models/arbeitnowResponse.model';
 
 @Injectable({
   providedIn: 'root'

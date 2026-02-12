@@ -1,0 +1,1 @@
+export type ApplicationStatus = 'en_attente' | 'accepte' | 'refuse';
