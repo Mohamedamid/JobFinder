@@ -1,0 +1,70 @@
+$bg-dark: #1b1e23;
+$text-light: #fff;
+$orange: #f09819;
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.header-section {
+  text-align: center;
+  margin-bottom: 50px;
+  
+  h1 { 
+    color: $text-light; 
+    font-size: 2.5rem; 
+    margin-bottom: 10px;
+    
+    .highlight { color: $orange; }
+  }
+  
+  .subtitle { color: #8b9bb4; font-size: 1.1rem; }
+}
+
+.jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 25px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 16px;
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+
+  .icon-circle {
+    width: 80px; height: 80px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 20px;
+    
+    i { font-size: 2.5rem; color: #6c757d; }
+  }
+
+  h3 { color: $text-light; margin-bottom: 10px; font-size: 1.5rem; }
+  p { color: #8b9bb4; margin-bottom: 30px; }
+
+  .btn-go {
+    display: inline-block;
+    padding: 12px 30px;
+    background: $orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+    
+    &:hover {
+      background: darken($orange, 10%);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(240, 152, 25, 0.3);
+    }
+  }
+}

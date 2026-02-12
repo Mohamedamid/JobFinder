@@ -8,6 +8,15 @@
       "prenom": "User"
     }
   ],
-  "favoritesOffers": [],
+  "favoritesOffers": [
+    {
+      "id": "a6f3",
+      "userId": "4",
+      "offerId": "webentwickler-offenburg-116225",
+      "title": "Webentwickler (m/w/d)",
+      "company": "AUTOHAUSEN AG",
+      "location": "Offenburg"
+    }
+  ],
   "applications": []
 }

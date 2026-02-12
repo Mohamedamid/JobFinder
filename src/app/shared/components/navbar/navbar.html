@@ -10,12 +10,12 @@
         </a>
       </li>
       <li>
-        <a routerLink="/favorites" routerLinkActive="active">
+        <a routerLink="/favorites" routerLinkActive="active" *ngIf="authService.isLoggedIn()">
           <i class="bi bi-heart"></i> Favoris
         </a>
       </li>
       <li>
-        <a routerLink="/applications" routerLinkActive="active">
+        <a routerLink="/applications" routerLinkActive="active" *ngIf="authService.isLoggedIn()">
           <i class="bi bi-send"></i> Candidatures
         </a>
       </li>

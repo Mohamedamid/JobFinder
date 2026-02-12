@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+  
+  <div class="header-section">
+    <h1>Mes <span class="highlight">Favoris</span></h1>
+    <p class="subtitle">Retrouvez toutes vos offres sauvegardées</p>
+  </div>
+
+  <div *ngIf="favoritesList().length === 0" class="empty-state">
+    <div class="icon-circle">
+      <i class="bi bi-heart-break"></i>
+    </div>
+    <h3>Aucun favori pour le moment</h3>
+    <p>Vous n'avez pas encore sauvegardé d'offres d'emploi.</p>
+    <a routerLink="/jobs" class="btn-go">
+      Explorer les offres
+    </a>
+  </div>
+
+  <div class="jobs-grid" *ngIf="favoritesList().length > 0">
+    
+    <app-job-card 
+      *ngFor="let fav of favoritesList()"
+      [job]="mapToJob(fav)" 
+      [favoritesList]="favoritesList()">
+      </app-job-card>
+
+  </div>
+
+</div>

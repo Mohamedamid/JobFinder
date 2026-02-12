@@ -1,0 +1,79 @@
+<app-navbar></app-navbar>
+
+<div class="container">
+  
+  <div class="header">
+    <h1>Mes <span class="highlight">Candidatures</span></h1>
+    <p>Suivez l'état de vos demandes en temps réel.</p>
+  </div>
+
+  <div class="table-wrapper" *ngIf="(apps$ | async) as apps">
+    
+    <table *ngIf="apps.length > 0; else emptyState">
+      <thead>
+        <tr>
+          <th>Entreprise / Poste</th>
+          <th>Date</th>
+          <th class="text-center">Statut</th>
+          <th>Mes Notes</th>
+          <th class="text-center">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let app of apps">
+          
+          <td class="info-cell">
+            <div class="company-logo">{{ app.company.charAt(0) | uppercase }}</div>
+            <div class="details">
+              <span class="company">{{ app.company }}</span>
+              <a [href]="app.url" target="_blank" class="title">
+                {{ app.title }} <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+            </div>
+          </td>
+
+          <td class="date-cell">
+            <span class="date-badge">
+              {{ app.dateAdded | date:'dd MMM' }}
+            </span>
+          </td>
+
+          <td class="status-cell text-center">
+            <div class="select-wrapper" [ngClass]="app.status">
+              <select [ngModel]="app.status" (ngModelChange)="updateStatus(app, $event)">
+                <option value="en_attente">En attente</option>
+                <option value="accepte">Accepté</option>
+                <option value="refuse">Refusé</option>
+              </select>
+            </div>
+          </td>
+
+          <td class="notes-cell">
+            <input 
+              type="text" 
+              class="note-input" 
+              placeholder="Ajouter une note..." 
+              [value]="app.notes"
+              (blur)="updateNotes(app, $event)">
+          </td>
+
+          <td class="action-cell text-center">
+            <button class="btn-delete" (click)="deleteApp(app.id!)">
+              <i class="bi bi-trash3"></i>
+            </button>
+          </td>
+
+        </tr>
+      </tbody>
+    </table>
+
+    <ng-template #emptyState>
+      <div class="empty-state">
+        <i class="bi bi-folder2-open"></i>
+        <h3>Aucune candidature</h3>
+        <a routerLink="/jobs" class="btn-go">Explorer les offres</a>
+      </div>
+    </ng-template>
+
+  </div>
+</div>
