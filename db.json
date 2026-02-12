@@ -10,54 +10,66 @@
   ],
   "favoritesOffers": [
     {
-      "id": "a6f3",
+      "id": "a012",
       "userId": "4",
-      "offerId": "webentwickler-offenburg-116225",
-      "title": "Webentwickler (m/w/d)",
-      "company": "AUTOHAUSEN AG",
-      "location": "Offenburg"
+      "offerId": "kosmetikerin-mit-nisv-fur-waxing-laser-brows-in-voll-oder-teilzeit-hamburg-219835",
+      "title": "Kosmetikerin mit NiSV (m/w/d) für Waxing, Laser & Brows in Voll- oder Teilzeit",
+      "company": "Waxcat GmbH",
+      "location": "Hamburg"
     },
     {
-      "id": "0685",
+      "id": "4fca",
       "userId": "4",
-      "offerId": "praktikum-im-bereich-it-security-stuttgart-327110",
-      "title": "Praktikum im Bereich IT-Security",
+      "offerId": "it-security-starter-stuttgart-388940",
+      "title": "IT-Security Starter (m/w/d)",
       "company": "Medialine EuroTrade AG",
       "location": "Stuttgart"
     },
     {
-      "id": "ddc0",
+      "id": "a45a",
       "userId": "4",
-      "offerId": "sie-rechnen-jeden-monat-gehalter-ab-aber-was-ist-mit-ihrem-eigenen-lohnbuchhalter-in-koblenz-371392",
-      "title": "Sie rechnen jeden Monat Gehälter ab ... aber was ist mit Ihrem eigenen? Lohnbuchhalter (m/w/d) in Koblenz",
-      "company": "ADVIMED Koblenz Steuerberatungsgesellschaft mbH",
-      "location": "Koblenz"
+      "offerId": "projektleiter-versorgungstechnik-vogt-367558",
+      "title": "Projektleiter Versorgungstechnik (m/w/d)",
+      "company": "Ingenieurbüro Sulzer GmbH & Co. KG",
+      "location": "Vogt"
     }
   ],
   "applications": [
     {
-      "id": "0cdc",
+      "id": "99a1",
       "userId": "4",
-      "offerId": "ausbildung-zum-fachinformatiker-fur-systemintegration-stuttgart-353238",
-      "title": "Ausbildung zum Fachinformatiker für Systemintegration (m/w/d)",
-      "company": "Medialine EuroTrade AG",
-      "location": "Stuttgart",
-      "url": "https://www.arbeitnow.com/jobs/companies/medialine-eurotrade-ag/ausbildung-zum-fachinformatiker-fur-systemintegration-stuttgart-353238",
+      "offerId": "werkstudent-minijob-ai-agents-quasiris-search-cloud-qsc-erfurt-171644",
+      "title": "Werkstudent / Minijob (m/w/d) - AI Agents & Quasiris Search Cloud (QSC)",
+      "company": "Quasiris",
+      "location": "Erfurt",
+      "url": "https://www.arbeitnow.com/jobs/companies/quasiris/werkstudent-minijob-ai-agents-quasiris-search-cloud-qsc-erfurt-171644",
       "status": "accepte",
       "notes": "",
-      "dateAdded": "2026-02-12T09:02:42.024Z"
+      "dateAdded": "2026-02-12T12:26:58.594Z"
     },
     {
-      "id": "90a0",
+      "id": "f979",
       "userId": "4",
       "offerId": "telemarketing-schorndorf-77381",
       "title": "Telemarketing",
       "company": "BLP Software GmbH",
       "location": "Schorndorf",
       "url": "https://www.arbeitnow.com/jobs/companies/blp-software-gmbh/telemarketing-schorndorf-77381",
+      "status": "accepte",
+      "notes": "",
+      "dateAdded": "2026-02-12T12:27:00.217Z"
+    },
+    {
+      "id": "2110",
+      "userId": "4",
+      "offerId": "content-creator-mulheim-28350",
+      "title": "Content Creator (m/w/d)",
+      "company": "Lionflence",
+      "location": "Mülheim",
+      "url": "https://www.arbeitnow.com/jobs/companies/lionflence/content-creator-mulheim-28350",
       "status": "en_attente",
       "notes": "",
-      "dateAdded": "2026-02-12T09:03:07.872Z"
+      "dateAdded": "2026-02-12T12:27:03.081Z"
     }
   ]
 }

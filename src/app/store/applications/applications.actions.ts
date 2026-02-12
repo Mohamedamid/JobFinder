@@ -2,6 +2,8 @@ import { createAction, props } from '@ngrx/store';
 import { Application } from '../../core/models/application.model';
 
 export const loadApps = createAction('[Apps] Load', props<{ userId: number }>());
+export const clearApps = createAction('[Apps] Clear');
+
 export const loadAppsSuccess = createAction('[Apps] Load Success', props<{ apps: Application[] }>());
 export const loadAppsFailure = createAction('[Apps] Load Failure', props<{ error: string }>());
 

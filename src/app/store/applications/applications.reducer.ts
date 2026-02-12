@@ -17,6 +17,12 @@ export const initialState: AppState = {
 export const applicationReducer = createReducer(
   initialState,
 
+  on(AppActions.clearApps, () => ({
+    items: [],
+    loading: false,
+    error: null
+  })),
+
   on(AppActions.loadApps, (state) => ({ ...state, loading: true })),
   on(AppActions.loadAppsSuccess, (state, { apps }) => ({ ...state, items: apps, loading: false })),
   

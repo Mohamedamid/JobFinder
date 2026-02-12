@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Router } from '@angular/router';
 import { AuthService } from '../../../core/services/auth.service';
 import * as FavActions from '../../../store/favorites/favorites.actions';
+import * as AppActions from '../../../store/applications/applications.actions';
 import { Store } from '@ngrx/store';
 
 @Component({
@@ -23,6 +24,7 @@ export class NavbarComponent {
 
   logout() {
     this.store.dispatch(FavActions.clearFavorites());
+    this.store.dispatch(AppActions.clearApps());
     this.authService.logout();
     this.router.navigate(['/jobs']);
   }

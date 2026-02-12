@@ -64,12 +64,11 @@ export class JobSearchComponent implements OnInit {
     const userId = this.authService.getCurrentUserId();
 
     if (userId) {
-    
       this.store.dispatch(FavActions.loadFavorites({ userId }));
       this.store.dispatch(AppActions.loadApps({ userId })); 
     } else {
       this.store.dispatch(FavActions.clearFavorites());
-    
+      this.store.dispatch(AppActions.clearApps());
     }
   }
 
