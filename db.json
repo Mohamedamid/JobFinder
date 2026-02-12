@@ -1,13 +1,6 @@
 {
   "users": [
     {
-      "id": "efd0",
-      "nom": "Oussama",
-      "prenom": "oussa",
-      "email": "oussama765@gmail.com",
-      "password": "oussama"
-    },
-    {
       "id": "885b",
       "nom": "AMID",
       "prenom": "Mohamed",
@@ -17,38 +10,74 @@
   ],
   "favoritesOffers": [
     {
-      "id": "c3be",
+      "id": "e9c7",
       "userId": "885b",
       "offerId": "kosmetikerin-mit-nisv-fur-waxing-laser-brows-in-voll-oder-teilzeit-hamburg-219835",
       "title": "Kosmetikerin mit NiSV (m/w/d) für Waxing, Laser & Brows in Voll- oder Teilzeit",
       "company": "Waxcat GmbH",
       "location": "Hamburg"
-    }
-  ],
-  "applications": [
-    {
-      "id": "8956",
-      "userId": "885b",
-      "offerId": "kosmetikerin-mit-nisv-fur-waxing-laser-brows-in-voll-oder-teilzeit-hamburg-219835",
-      "title": "Kosmetikerin mit NiSV (m/w/d) für Waxing, Laser & Brows in Voll- oder Teilzeit",
-      "company": "Waxcat GmbH",
-      "location": "Hamburg",
-      "url": "https://www.arbeitnow.com/jobs/companies/waxcat-gmbh/kosmetikerin-mit-nisv-fur-waxing-laser-brows-in-voll-oder-teilzeit-hamburg-219835",
-      "status": "en_attente",
-      "notes": "",
-      "dateAdded": "2026-02-12T15:18:30.860Z"
     },
     {
-      "id": "fafa",
+      "id": "6fa8",
       "userId": "885b",
       "offerId": "it-security-starter-stuttgart-388940",
       "title": "IT-Security Starter (m/w/d)",
       "company": "Medialine EuroTrade AG",
-      "location": "Stuttgart",
-      "url": "https://www.arbeitnow.com/jobs/companies/medialine-eurotrade-ag/it-security-starter-stuttgart-388940",
+      "location": "Stuttgart"
+    },
+    {
+      "id": "cabc",
+      "userId": "885b",
+      "offerId": "ausbildung-zum-fachinformatiker-fur-systemintegration-stuttgart-353238",
+      "title": "Ausbildung zum Fachinformatiker für Systemintegration (m/w/d)",
+      "company": "Medialine EuroTrade AG",
+      "location": "Stuttgart"
+    },
+    {
+      "id": "946a",
+      "userId": "885b",
+      "offerId": "projektleiter-versorgungstechnik-vogt-367558",
+      "title": "Projektleiter Versorgungstechnik (m/w/d)",
+      "company": "Ingenieurbüro Sulzer GmbH & Co. KG",
+      "location": "Vogt"
+    }
+  ],
+  "applications": [
+    {
+      "id": "1ab1",
+      "userId": "885b",
+      "offerId": "artist-manager-influencer-manager-mulheim-442427",
+      "title": "Artist Manager / Influencer Manager (m/w/d)",
+      "company": "Lionflence",
+      "location": "Mülheim",
+      "url": "https://www.arbeitnow.com/jobs/companies/lionflence/artist-manager-influencer-manager-mulheim-442427",
       "status": "en_attente",
       "notes": "",
-      "dateAdded": "2026-02-12T15:18:33.395Z"
+      "dateAdded": "2026-02-12T15:37:48.155Z"
+    },
+    {
+      "id": "95d8",
+      "userId": "885b",
+      "offerId": "sie-haben-einen-soliden-job-wie-schade-fur-sie-steuerfachangestellte-remote-oder-in-koblenz-472680",
+      "title": "Sie haben einen soliden Job? Wie schade für Sie. Steuerfachangestellte (m/w/d) remote oder in Koblenz",
+      "company": "ADVIMED Koblenz Steuerberatungsgesellschaft mbH",
+      "location": "Koblenz",
+      "url": "https://www.arbeitnow.com/jobs/companies/advimed-koblenz-steuerberatungsgesellschaft-mbh/sie-haben-einen-soliden-job-wie-schade-fur-sie-steuerfachangestellte-remote-oder-in-koblenz-472680",
+      "status": "en_attente",
+      "notes": "",
+      "dateAdded": "2026-02-12T15:37:50.947Z"
+    },
+    {
+      "id": "ef4e",
+      "userId": "885b",
+      "offerId": "hiwi-praktikant-dualer-student-grafik-mediendesign-in-aachen-307073",
+      "title": "Hiwi/ Praktikant/ Dualer Student Grafik Mediendesign in Aachen",
+      "company": "INC Innovation Center GmbH",
+      "location": "Aachen",
+      "url": "https://www.arbeitnow.com/jobs/companies/inc-innovation-center-gmbh/hiwi-praktikant-dualer-student-grafik-mediendesign-in-aachen-307073",
+      "status": "en_attente",
+      "notes": "",
+      "dateAdded": "2026-02-12T15:37:53.339Z"
     }
   ]
 }

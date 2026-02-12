@@ -2,7 +2,7 @@ import { Injectable, inject } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { FavoriteService } from '../../core/services/favorite.service';
 import * as FavActions from './favorites.actions';
-import { map, mergeMap, catchError, of } from 'rxjs';
+import { map, mergeMap, catchError, of, switchMap, forkJoin } from 'rxjs';
 
 @Injectable()
 export class FavoritesEffects {
@@ -40,6 +40,31 @@ export class FavoritesEffects {
         this.FavoriteService.removeFavorite(action.id).pipe(
           map(() => FavActions.removeFavoriteSuccess({ offerId: action.offerId })),
           catchError((error) => of(FavActions.removeFavoriteFailure({ error: error.message })))
+        )
+      )
+    )
+  );
+
+  deleteAll$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(FavActions.deleteAllFavorites),
+      switchMap((action) =>
+        this.FavoriteService.getFavorites(action.userId).pipe(
+          switchMap((favorites) => {
+            if (favorites.length === 0) {
+              return of(FavActions.clearFavorites());
+            }
+
+            const deleteRequests = favorites.map((fav) =>
+              this.FavoriteService.removeFavorite(fav.id!)
+            );
+
+            return forkJoin(deleteRequests).pipe(
+              map(() => FavActions.clearFavorites()),
+              catchError((error) => of(FavActions.loadFavoritesFailure({ error: error.message })))
+            );
+          }),
+          catchError((error) => of(FavActions.loadFavoritesFailure({ error: error.message })))
         )
       )
     )

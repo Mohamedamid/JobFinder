@@ -98,28 +98,35 @@ export class ProfileComponent implements OnInit {
   deleteAccount() {
     Swal.fire({
       title: 'Supprimer votre compte ?',
-      text: 'Toutes vos données seront perdues définitivement !',
+      text: 'Toutes vos données (Favoris & Candidatures) seront perdues !',
       icon: 'warning',
       showCancelButton: true,
       confirmButtonColor: '#d33',
-      cancelButtonColor: '#3085d6',
-      confirmButtonText: 'Oui, supprimer',
+      confirmButtonText: 'Oui, tout supprimer',
       cancelButtonText: 'Annuler',
       background: '#1b1e23',
       color: '#fff',
     }).then((result) => {
       if (result.isConfirmed && this.user) {
-        this.authService.deleteAccount(this.user.id).subscribe(() => {
-          this.authService.logout();
-          this.router.navigate(['/jobs']);
-          Swal.fire({
-            title: 'Supprimé!',
-            text: 'Compte supprimé.',
-            icon: 'success',
-            background: '#1b1e23',
-            color: '#fff',
+
+        const userId = this.user.id as any; 
+
+        this.store.dispatch(FavActions.deleteAllFavorites({ userId }));
+        this.store.dispatch(AppActions.deleteAllApplications({ userId }));
+
+        setTimeout(() => {
+          this.authService.deleteAccount(this.user!.id).subscribe(() => {
+            this.authService.logout();
+            this.router.navigate(['/jobs']);
+            Swal.fire({
+              title: 'Supprimé!',
+              text: 'Compte et données supprimés.',
+              icon: 'success',
+              background: '#1b1e23',
+              color: '#fff',
+            });
           });
-        });
+        }, 500); 
       }
     });
   }

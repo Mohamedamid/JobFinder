@@ -15,3 +15,5 @@ export const addFavoriteSuccess = createAction('[Favorites] Add Success', props<
 
 export const removeFavorite = createAction('[Favorites] Remove', props<{ id: number; offerId: string }>());
 export const removeFavoriteSuccess = createAction('[Favorites] Remove Success', props<{ offerId: string }>());
+
+export const deleteAllFavorites = createAction('[Favorites] Delete All', props<{ userId: number }>());

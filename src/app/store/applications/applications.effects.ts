@@ -2,7 +2,7 @@ import { Injectable, inject } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { ApplicationService } from '../../core/services/application.service';
 import * as AppActions from './applications.actions';
-import { map, mergeMap, catchError, of } from 'rxjs';
+import { map, mergeMap, catchError, of, switchMap, forkJoin } from 'rxjs';
 
 @Injectable()
 export class ApplicationsEffects {
@@ -40,4 +40,28 @@ export class ApplicationsEffects {
       catchError(error => of(AppActions.deleteAppFailure({ error: error.message })))
     ))
   ));
+
+  deleteAll$ = createEffect(() =>
+    this.actions$.pipe(
+      ofType(AppActions.deleteAllApplications),
+      switchMap((action) =>
+        this.appService.getApplications(action.userId).pipe(
+          switchMap((apps) => {
+            if (apps.length === 0) {
+              return of(AppActions.clearApps());
+            }
+
+            const deleteRequests = apps.map((app) =>
+              this.appService.deleteApplication(app.id!)
+            );
+
+            return forkJoin(deleteRequests).pipe(
+              map(() => AppActions.clearApps()),
+              catchError((error) => of(AppActions.loadAppsFailure({ error: error.message })))
+            );
+          })
+        )
+      )
+    )
+  );
 }

@@ -18,3 +18,6 @@ export const updateAppFailure = createAction('[Apps] Update Failure', props<{ er
 export const deleteApp = createAction('[Apps] Delete', props<{ id: number }>());
 export const deleteAppSuccess = createAction('[Apps] Delete Success', props<{ id: number }>());
 export const deleteAppFailure = createAction('[Apps] Delete Failure', props<{ error: string }>());
+
+// ... existing actions
+export const deleteAllApplications = createAction('[Apps] Delete All', props<{ userId: number }>());

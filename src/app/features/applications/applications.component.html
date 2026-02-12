@@ -15,7 +15,7 @@
           <th>Entreprise / Poste</th>
           <th>Date</th>
           <th class="text-center">Statut</th>
-          <th>Mes Notes</th>
+          <!-- <th>Mes Notes</th> -->
           <th class="text-center">Action</th>
         </tr>
       </thead>
@@ -48,14 +48,14 @@
             </div>
           </td>
 
-          <td class="notes-cell">
+          <!-- <td class="notes-cell">
             <input 
               type="text" 
               class="note-input" 
               placeholder="Ajouter une note..." 
               [value]="app.notes"
               (blur)="updateNotes(app, $event)">
-          </td>
+          </td> -->
 
           <td class="action-cell text-center">
             <button class="btn-delete" (click)="deleteApp(app.id!)">
