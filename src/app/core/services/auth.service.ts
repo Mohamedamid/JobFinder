@@ -42,6 +42,16 @@ export class AuthService {
     return user ? user.id : null;
   }
 
+  updateProfile(user: User): Observable<User> {
+    return this.http.put<User>(`${this.apiUrl}/${user.id}`, user);
+  }
+
+  deleteAccount(userId: number): Observable<any> {
+    return this.http.delete(`${this.apiUrl}/${userId}`).pipe(
+      tap(() => this.logout())
+    );
+  }
+
   private setSession(user: User): void {
     const { password, ...userWithoutPassword } = user;
     localStorage.setItem('user_session', JSON.stringify(userWithoutPassword));

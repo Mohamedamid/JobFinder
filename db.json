@@ -1,75 +1,54 @@
 {
   "users": [
     {
-      "id": "4",
-      "email": "admin@gmail.com",
-      "password": "admin123",
-      "nom": "Admin",
-      "prenom": "User"
+      "id": "efd0",
+      "nom": "Oussama",
+      "prenom": "oussa",
+      "email": "oussama765@gmail.com",
+      "password": "oussama"
+    },
+    {
+      "id": "885b",
+      "nom": "AMID",
+      "prenom": "Mohamed",
+      "email": "amid.mohamed2024@gmail.com",
+      "password": "azertaz"
     }
   ],
   "favoritesOffers": [
     {
-      "id": "a012",
-      "userId": "4",
+      "id": "c3be",
+      "userId": "885b",
       "offerId": "kosmetikerin-mit-nisv-fur-waxing-laser-brows-in-voll-oder-teilzeit-hamburg-219835",
       "title": "Kosmetikerin mit NiSV (m/w/d) für Waxing, Laser & Brows in Voll- oder Teilzeit",
       "company": "Waxcat GmbH",
       "location": "Hamburg"
-    },
-    {
-      "id": "4fca",
-      "userId": "4",
-      "offerId": "it-security-starter-stuttgart-388940",
-      "title": "IT-Security Starter (m/w/d)",
-      "company": "Medialine EuroTrade AG",
-      "location": "Stuttgart"
-    },
-    {
-      "id": "a45a",
-      "userId": "4",
-      "offerId": "projektleiter-versorgungstechnik-vogt-367558",
-      "title": "Projektleiter Versorgungstechnik (m/w/d)",
-      "company": "Ingenieurbüro Sulzer GmbH & Co. KG",
-      "location": "Vogt"
     }
   ],
   "applications": [
     {
-      "id": "99a1",
-      "userId": "4",
-      "offerId": "werkstudent-minijob-ai-agents-quasiris-search-cloud-qsc-erfurt-171644",
-      "title": "Werkstudent / Minijob (m/w/d) - AI Agents & Quasiris Search Cloud (QSC)",
-      "company": "Quasiris",
-      "location": "Erfurt",
-      "url": "https://www.arbeitnow.com/jobs/companies/quasiris/werkstudent-minijob-ai-agents-quasiris-search-cloud-qsc-erfurt-171644",
-      "status": "accepte",
-      "notes": "",
-      "dateAdded": "2026-02-12T12:26:58.594Z"
-    },
-    {
-      "id": "f979",
-      "userId": "4",
-      "offerId": "telemarketing-schorndorf-77381",
-      "title": "Telemarketing",
-      "company": "BLP Software GmbH",
-      "location": "Schorndorf",
-      "url": "https://www.arbeitnow.com/jobs/companies/blp-software-gmbh/telemarketing-schorndorf-77381",
-      "status": "accepte",
-      "notes": "",
-      "dateAdded": "2026-02-12T12:27:00.217Z"
-    },
-    {
-      "id": "2110",
-      "userId": "4",
-      "offerId": "content-creator-mulheim-28350",
-      "title": "Content Creator (m/w/d)",
-      "company": "Lionflence",
-      "location": "Mülheim",
-      "url": "https://www.arbeitnow.com/jobs/companies/lionflence/content-creator-mulheim-28350",
+      "id": "8956",
+      "userId": "885b",
+      "offerId": "kosmetikerin-mit-nisv-fur-waxing-laser-brows-in-voll-oder-teilzeit-hamburg-219835",
+      "title": "Kosmetikerin mit NiSV (m/w/d) für Waxing, Laser & Brows in Voll- oder Teilzeit",
+      "company": "Waxcat GmbH",
+      "location": "Hamburg",
+      "url": "https://www.arbeitnow.com/jobs/companies/waxcat-gmbh/kosmetikerin-mit-nisv-fur-waxing-laser-brows-in-voll-oder-teilzeit-hamburg-219835",
       "status": "en_attente",
       "notes": "",
-      "dateAdded": "2026-02-12T12:27:03.081Z"
+      "dateAdded": "2026-02-12T15:18:30.860Z"
+    },
+    {
+      "id": "fafa",
+      "userId": "885b",
+      "offerId": "it-security-starter-stuttgart-388940",
+      "title": "IT-Security Starter (m/w/d)",
+      "company": "Medialine EuroTrade AG",
+      "location": "Stuttgart",
+      "url": "https://www.arbeitnow.com/jobs/companies/medialine-eurotrade-ag/it-security-starter-stuttgart-388940",
+      "status": "en_attente",
+      "notes": "",
+      "dateAdded": "2026-02-12T15:18:33.395Z"
     }
   ]
 }

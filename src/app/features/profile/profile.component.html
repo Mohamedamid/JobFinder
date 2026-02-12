@@ -1,0 +1,100 @@
+<app-navbar></app-navbar>
+<div class="container">
+  
+  <div class="profile-layout" *ngIf="user">
+
+    <div class="header-section">
+      <div class="user-info">
+        <div class="avatar">
+          {{ user.prenom.charAt(0) | uppercase }}{{ user.nom.charAt(0) | uppercase }}
+        </div>
+        <div>
+          <h2>{{ user.prenom }} {{ user.nom | uppercase }}</h2>
+          <span class="role">{{ user.email }}</span>
+        </div>
+      </div>
+
+      <div class="stats-grid">
+        <div class="stat-card fav">
+  <i class="bi bi-heart-fill"></i>
+  <div class="stat-info">
+    <span class="num">{{ favCount$ | async }}</span>
+    <span class="label">Favoris</span>
+  </div>
+</div>
+
+<div class="stat-card app">
+  <i class="bi bi-briefcase-fill"></i>
+  <div class="stat-info">
+    <span class="num">{{ appCount$ | async }}</span>
+    <span class="label">Candidatures</span>
+  </div>
+</div>
+      </div>
+    </div>
+
+    <div class="form-section">
+      <div class="section-title">
+        <h3>Informations Personnelles</h3>
+        <span class="badge-mode" [class.editing]="isEditing">
+          {{ isEditing ? 'Mode Édition' : 'Lecture Seule' }}
+        </span>
+      </div>
+
+      <form (ngSubmit)="saveProfile()">
+        <div class="grid-inputs">
+          
+          <div class="input-group">
+            <label>Prénom</label>
+            <input type="text" [(ngModel)]="user.prenom" name="prenom" 
+                   [disabled]="!isEditing" [class.editable]="isEditing">
+          </div>
+
+          <div class="input-group">
+            <label>Nom</label>
+            <input type="text" [(ngModel)]="user.nom" name="nom" 
+                   [disabled]="!isEditing" [class.editable]="isEditing">
+          </div>
+
+          <div class="input-group">
+            <label>Email</label>
+            <input type="email" [value]="user.email" disabled class="locked">
+            <small *ngIf="isEditing">Email non modifiable</small>
+          </div>
+
+          <div class="input-group">
+            <label>Mot de passe</label>
+            <input type="password" [(ngModel)]="user.password" name="password" 
+                   [disabled]="!isEditing" [class.editable]="isEditing">
+          </div>
+
+        </div>
+
+        <div class="actions-bar">
+          
+          <button type="button" class="btn-delete" (click)="deleteAccount()" *ngIf="!isEditing">
+            <i class="bi bi-trash"></i> Supprimer le compte
+          </button>
+
+          <div class="right-actions">
+            <button type="button" class="btn-edit" (click)="toggleEdit()" *ngIf="!isEditing">
+              <i class="bi bi-pencil-square"></i> Modifier
+            </button>
+
+            <ng-container *ngIf="isEditing">
+              <button type="button" class="btn-cancel" (click)="toggleEdit()">
+                Annuler
+              </button>
+              <button type="submit" class="btn-save" [disabled]="isLoading">
+                <span *ngIf="isLoading">Enregistrement...</span>
+                <span *ngIf="!isLoading">Sauvegarder</span>
+              </button>
+            </ng-container>
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+  </div>
+</div>
