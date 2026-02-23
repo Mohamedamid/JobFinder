@@ -9,6 +9,7 @@ import { AuthService } from '../../core/services/auth.service';
 import { Application } from '../../core/models/application.model';
 import * as AppActions from '../../store/applications/applications.actions';
 import Swal from 'sweetalert2';
+import { selectAllApplications } from '../../store/applications/applications.selectors';
 
 @Component({
   selector: 'app-applications',
@@ -21,7 +22,7 @@ export class ApplicationsComponent implements OnInit {
   private store = inject(Store);
   private authService = inject(AuthService);
 
-  apps$ = this.store.select((state: any) => state.applications.items);
+  apps$ = this.store.select(selectAllApplications);
 
   ngOnInit() {
     const userId = this.authService.getCurrentUserId();

@@ -49,7 +49,8 @@ export class JobCardComponent {
         title: this.job.title,
         company: this.job.company_name,
         location: this.job.location,
-      
+        url: this.job.url,
+        description: this.job.description,
       };
       this.store.dispatch(FavActions.addFavorite({ favorite: newFav }));
     }

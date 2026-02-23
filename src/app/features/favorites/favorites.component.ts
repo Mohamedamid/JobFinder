@@ -10,6 +10,10 @@ import { AuthService } from '../../core/services/auth.service';
 import { Job } from '../../core/models/job.model';
 import { Favorite } from '../../core/models/favorite.model';
 import * as FavActions from '../../store/favorites/favorites.actions';
+import { selectAllFavorites } from '../../store/favorites/favorites.selectors';
+import { selectAllApplications } from '../../store/applications/applications.selectors';
+import { Application } from '../../core/models/application.model';
+import * as AppActions from '../../store/applications/applications.actions';
 
 @Component({
   selector: 'app-favorites',
@@ -22,8 +26,7 @@ export class FavoritesComponent implements OnInit {
   private store = inject(Store);
   private authService = inject(AuthService);
 
-  favorites$ = this.store.select((state: any) => state.favorites.items);
-  
+  favorites$ = this.store.select(selectAllFavorites);
   favoritesList = toSignal(this.favorites$, { initialValue: [] as Favorite[] });
 
   ngOnInit() {
@@ -40,9 +43,9 @@ export class FavoritesComponent implements OnInit {
     company_name: fav.company,
     location: fav.location,
 
-    description: '<p>Offre sauvegardée dans vos favoris.</p>',
+    description: fav.description,
     remote: false,
-    url: '#',
+    url: fav.url,
     tags: [],
     created_at: Date.now(),
     isFavorite: true,

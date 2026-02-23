@@ -5,4 +5,6 @@ export interface Favorite {
   title: string;
   company: string;
   location: string;
+  url: string;
+  description: string;
 }

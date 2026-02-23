@@ -12,6 +12,8 @@ import { User } from '../../core/models/user.model';
 import { NavbarComponent } from '../../shared/components/navbar/navbar';
 import * as AppActions from '../../store/applications/applications.actions';
 import * as FavActions from '../../store/favorites/favorites.actions';
+import { selectAllApplications } from '../../store/applications/applications.selectors';
+import { selectAllFavorites } from '../../store/favorites/favorites.selectors';
 
 @Component({
   selector: 'app-profile',
@@ -46,11 +48,11 @@ export class ProfileComponent implements OnInit {
       this.store.dispatch(AppActions.loadApps({ userId: userId as any })); 
       this.store.dispatch(FavActions.loadFavorites({ userId: userId as any }));
 
-      this.appCount$ = this.store.select((state: any) => state.applications.items).pipe(
+      this.appCount$ = this.store.select(selectAllApplications).pipe(
         map((apps: any[]) => apps ? apps.length : 0)
       );
 
-      this.favCount$ = this.store.select((state: any) => state.favorites.items).pipe(
+      this.favCount$ = this.store.select(selectAllFavorites).pipe(
         map((favs: any[]) => favs ? favs.length : 0)
       );
 

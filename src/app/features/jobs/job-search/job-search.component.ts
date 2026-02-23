@@ -12,6 +12,8 @@ import { NavbarComponent } from '../../../shared/components/navbar/navbar';
 
 import * as FavActions from '../../../store/favorites/favorites.actions';
 import * as AppActions from '../../../store/applications/applications.actions'; 
+import { selectAllFavorites } from '../../../store/favorites/favorites.selectors';
+import { selectAllApplications } from '../../../store/applications/applications.selectors';
 
 @Component({
   selector: 'app-job-search',
@@ -28,13 +30,13 @@ export class JobSearchComponent implements OnInit {
   allJobs = signal<Job[]>([]);
   isLoading = signal(true);
   currentPage = signal(1);
-  itemsPerPage = 12;
+  itemsPerPage = 10;
   searchCriteria = signal({ term: '', loc: '' });
 
-  favorites$ = this.store.select((state: any) => state.favorites.items);
+  favorites$ = this.store.select(selectAllFavorites);
   favsList = toSignal(this.favorites$, { initialValue: [] });
 
-  applications$ = this.store.select((state: any) => state.applications.items);
+  applications$ = this.store.select(selectAllApplications);
   appsList = toSignal(this.applications$, { initialValue: [] });
 
   filteredJobs = computed(() => {

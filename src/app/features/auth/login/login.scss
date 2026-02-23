@@ -44,6 +44,7 @@ $gradient: linear-gradient(to right, $orange, $yellow);
     
     .highlight {
       background: $gradient;
+      background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; 
     }
