@@ -6,85 +6,8 @@
       "prenom": "User",
       "email": "user@gmail.com",
       "password": "user123"
-    },
-    {
-      "id": "5d97",
-      "nom": "AMID",
-      "prenom": "Mohamed",
-      "email": "amid.mohamed2024@gmail.com",
-      "password": "aazzee"
     }
   ],
-  "favoritesOffers": [
-    {
-      "id": "32e2",
-      "userId": "5d97",
-      "offerId": "software-engineer-ios-core-product-berlin-germany-180687",
-      "title": "Software Engineer, iOS Core Product - Berlin, Germany",
-      "company": "Speechify",
-      "location": "Berlin, Berlin, Germany",
-      "url": "https://www.arbeitnow.com/jobs/companies/speechify/software-engineer-ios-core-product-berlin-germany-180687",
-      "description": "<p>The mission of Speechify is to make sure that reading is never a barrier to learning.</p>\n<p>Over 50 million people use Speechify's text-to-speech products to turn whatever they're reading – PDFs, books, Google Docs, news articles, websites – into audio, so they can read faster, read more, and remember more. Speechify's text-to-speech reading products include its iOS app, Android App, Mac App, Chrome Extension, and Web App. Google recently named Speechify the Chrome Extension of the Year and Apple named Speechify its App of the Day.</p>\n<p>Today, nearly 200 people around the globe work on Speechify in a 100% distributed setting – Speechify has no office. These include frontend and backend engineers, AI research scientists, and others from Amazon, Microsoft, and Google, leading PhD programs like Stanford, high growth startups like Stripe, Vercel, Bolt, and many founders of their own companies.</p>\n<p><strong>Overview</strong></p>\n<p data-speechify-sentence=\"\">With the growth of our iOS app, being the #18 productivity app in the App Store category and also our recent recognition as Apple's 2025 Design Award for inclusivity, we find the need for a Senior iOS Engineer to help us support the new user base as well as work on new and exciting projects to push our missing forward. &nbsp;&nbsp;</p>\n<p data-speechify-sentence=\"\">This is a key role and ideal for someone who thinks strategically, enjoys fast-paced environments, passionate about making product decisions, and has experience building great user experiences that delight users.</p>\n<p data-speechify-sentence=\"\">We are a flat organization that allows anyone to become a leader by showing excellent technical skills and delivering results consistently and fast. Work ethic, solid communication skills, and obsession with winning are paramount.&nbsp;</p>\n<p data-speechify-sentence=\"\">Our interview process involves several technical interviews and we aim to complete them within 1 week.&nbsp;</p>\n<p><strong>What Yo</strong><strong>u'</strong><strong>ll Do</strong></p>\n<ul>\n<li data-speechify-sentence=\"\">Opportunity to lead key engineering and product decisions</li>\n<li data-speechify-sentence=\"\">Actively shipping production code for the Speechify iOS app</li>\n<li data-speechify-sentence=\"\">Work within a dedicated product team</li>\n<li data-speechify-sentence=\"\">Participate in product discussions to shape the product roadmap</li>\n<li data-speechify-sentence=\"\">Maintain and enhance the existing complex app architecture</li>\n</ul>\n<p><strong>An Ideal Candidate Should Have</strong></p>\n<ul>\n<li data-speechify-sentence=\"\">Experience. You've worked on products that scaled to a large user base</li>\n<li data-speechify-sentence=\"\">Track record. You have worked on various products from inception to decent traction. You have been responsible for engineering the product</li>\n<li data-speechify-sentence=\"\">Customer obsession. We expect every team member whose responsibilities directly impact customers to be constantly obsessed about providing the best possible experience</li>\n<li data-speechify-sentence=\"\">Product thinking. You make thoughtful decisions about the evolution of your product and support internal teams and designers into taking the right direction</li>\n<li data-speechify-sentence=\"\">Speed. You work quickly to generate ideas and know how to decide which things can ship now and what things need time</li>\n<li data-speechify-sentence=\"\">Focus. We're a high-growth startup with a busy, remote team. You know how and when to engage or be heads down</li>\n<li>Technical skills. Swift, SwiftUI</li>\n</ul>\n<p><strong>Technical Requirements:</strong></p>\n<ul>\n<li>Swift Programming Language</li>\n<li>SwiftUI experience</li>\n<li>Experience in Multithreading Programming</li>\n<li>Working with CI/CD infrastructure</li>\n<li>Experience with Fastlane</li>\n<li>SOLID principles, the ability to write every single class according to SOLID</li>\n<li>Experience with Git and understanding of different Git strategies</li>\n</ul>\n<p data-speechify-sentence=\"\"><strong>What We offer:</strong></p>\n<ul>\n<li>A fast-growing environment where you can help shape the company and product</li>\n<li>An entrepreneurial crew that supports risk, intuition, and hustle</li>\n<li>The opportunity to make a big impact in a transformative industry</li>\n<li>A competitive salary, a collegiate atmosphere, and a commitment to building a great asynchronous culture</li>\n<li>Work on a product that millions of people use and where daily feedback includes users sharing that they cried when they first found the product because it was so impactful on their lives</li>\n<li>Support people with learning differences like Dyslexia, ADD, Low Vision, Concussions, Autism, and Second Language Learners, and give reading superpowers to professionals all over the world</li>\n<li>Work in one of the fastest growing sectors of tech: Intersection of Artificial Intelligence and Audio</li>\n</ul>\n<p><strong>Think you're a good fit for this job?&nbsp;</strong></p>\n<p>Tell us more about yourself and why you're interested in the role when you apply. <br>And don't forget to include links to your portfolio and LinkedIn.</p>\n<p><strong>Not looking but know someone who would make a great fit?&nbsp;</strong></p>\n<p>Refer them!&nbsp;</p>\n<p><strong>Speechify is committed to a diverse and inclusive workplace.&nbsp;</strong></p>\n<p>Speechify does not discriminate on the basis of race, national origin, gender, gender identity, sexual orientation, protected veteran status, disability, age, or other legally protected status.</p><p>Find more <a href=\"https://www.arbeitnow.com/english-speaking-jobs\">English Speaking Jobs in Germany</a> on Arbeitnow</a>"
-    },
-    {
-      "id": "c074",
-      "userId": "5d97",
-      "offerId": "sie-haben-einen-soliden-job-wie-schade-fur-sie-steuerfachangestellte-remote-oder-in-koblenz-314432",
-      "title": "Sie haben einen soliden Job? Wie schade für Sie. Steuerfachangestellte (m/w/d) remote oder in Koblenz",
-      "company": "ADVIMED Koblenz Steuerberatungsgesellschaft mbH",
-      "location": "Koblenz",
-      "url": "https://www.arbeitnow.com/jobs/companies/advimed-koblenz-steuerberatungsgesellschaft-mbh/sie-haben-einen-soliden-job-wie-schade-fur-sie-steuerfachangestellte-remote-oder-in-koblenz-314432",
-      "description": "<p>Liebe Bewerberin, lieber Bewerber,</p>\n<p>vielen Dank für Ihr Interesse.</p>\n<p>Haben Sie manchmal das Gefühl, dass noch mehr möglich wäre? Ihre Arbeitszeiten, Ihr Gehalt, der Kaffee im Büro – alles ist irgendwie in Ordnung, aber so richtig begeistert sind Sie nicht?</p>\n<p>Dabei ist doch klar: Ein guter Job bedeutet mehr, als nur stumpf vor dem PC zu sitzen.</p>\n<p>Deshalb legen wir von der Steuerkanzlei Advimed Wert auf Ihr Wohlbefinden.<br>\nWir legen Wert auf Ihre Bedürfnisse.<br>\nWir legen Wert auf Sie.</p>\n<p>Daher gilt: Vom Gehalt über den Urlaubsanspruch bis hin zu Ihren täglichen Aufgaben – bei uns erhalten Sie genau das, was Sie brauchen, um Ihr Leben und Ihren Alltag auf die nächste Stufe zu heben.</p>\n<h2>Aufgaben</h2>\n<p>Statt sich festen Aufgaben anzupassen, haben Sie bei uns die Möglichkeit, selbst auszuwählen. Entscheiden Sie einfach aus unserem Katalog an spannenden Tätigkeiten, was am besten zu Ihnen und Ihrer Karriere passt:</p>\n<p>📊 Finanzbuchhaltung &#x26; EÜR – Sie lieben die Standards? Dann übernehmen Sie doch einfach die FiBu, Steuererklärungen und einfache EÜRs für Ihren neuen Mandantenstamm.</p>\n<p>🔎 Lohn- &#x26; Gehaltsbuchhaltung – Sie sind der Kopf hinter den Löhnen? Dann nur zu: Unser Team freut sich bereits auf Ihre kompetente Unterstützung.</p>\n<p>📑 Jahresabschlüsse – Sie sind stark in der Erstellung von Bilanzen und Abschlüssen? Dann setzen wir Sie genau in diesem Aufgabenbereich ein.</p>\n<p>💼 Mandantenbetreuung &#x26; Co. – Grundsätzlich stehen Sie bei den meisten Aufgaben immer wieder regelmäßig mit Ihren Mandanten in Kontakt und bauen langfristige Verbindungen auf.</p>\n<p>✅ Teamentwicklung – Sie haben Spaß daran, neue Kolleginnen und Kollegen auszubilden? Übernehmen Sie gerne Verantwortung für unsere Azubis.</p>\n<p>Lassen Sie uns gemeinsam darüber sprechen, welche Aufgaben zu Ihnen passen und in welchem Bereich Sie am liebsten arbeiten möchten.</p>\n<h2>Qualifikation</h2>\n<p>Sie passen besonders gut zu uns, wenn…</p>\n<p>… Sie gerne Teil eines harmonischen und gut gelaunten Teams sind und Wertschätzung für die kleinen Dinge im Alltag empfinden.</p>\n<p>… Sie Ihre neuen Mandanten mit Ihrem Fachwissen unterstützen können. Idealerweise bringen Sie dazu eine abgeschlossene Ausbildung (z. B. als Steuerfachangestellte/r) mit.</p>\n<p>… Sie bereits in der Steuerberatung gearbeitet haben und wissen, wie die Abläufe in einer mittelständischen Kanzlei funktionieren.</p>\n<p>… Sie knallharte Ellbogenkämpfer*innen lieber nicht in Ihrem Büro sitzen haben und Herausforderungen stattdessen harmonisch lösen. (Falls Sie gerne mal Kicker spielen)</p>\n<p>… Sie gut sind, aber nicht so gut, dass Sie den Rest des Teams alt aussehen lassen. 😅</p>\n<h2>Benefits</h2>\n<p>Wir haben eine klare Haltung: Ihr Beitrag zum Unternehmenserfolg muss sich auch für Sie lohnen. Nur so können wir sicherstellen, dass wir langfristig und auf Augenhöhe erfolgreich zusammenarbeiten.</p>\n<p>🏡 <strong>100 % Homeoffice möglich</strong> – Sie arbeiten gerne von zu Hause? Dann nutzen Sie tageweise oder auch komplett Ihr Heimbüro. Natürlich können Sie flexibel zwischen Homeoffice und Büro wechseln.</p>\n<p>⏳ <strong>Flexible Arbeitszeiten</strong> – Entscheiden Sie selbst, wann Ihr Tag beginnt. Unsere flexiblen Arbeitszeiten ermöglichen es Ihnen, sich morgens noch einmal im warmen Bett umzudrehen oder den ersten Kaffee mit Blick auf den Sonnenaufgang über Koblenz zu genießen.</p>\n<p>💰 <strong>Attraktive Vergütung</strong> – Ihr Gehalt liegt über dem regionalen Durchschnitt der Branche und wird durch mögliche Tantiemen sowie weitere Gehaltsbestandteile ergänzt.</p>\n<p>🏢 <strong>Modernes Büro in Koblenz</strong> – Kostenlose Parkplätze mitten in der Stadt, Restaurants, Shoppingpassagen, lichtdurchflutete Büros und nur wenige Gehminuten zum Bahnhof – damit Sie sich rundum wohlfühlen.</p>\n<p>🎓 <strong>Karriere nach Ihren Vorstellungen</strong> – Ob Steuerfachwirt, Fibutroniker, Bilanzbuchhalter oder Steuerberater – wir freuen uns über Ihr Engagement und unterstützen Sie sowohl finanziell (bis zu 100 %) als auch persönlich bei Ihrer Weiterentwicklung.</p>\n<p>🚗 <strong>Mobilitätsangebote</strong> – Sie fahren gerne Auto, E-Bike oder Fahrrad? Ob komfortables E-Bike, sportliches Rennrad oder vielleicht sogar ein schnittiges Cabrio als Dienstwagen – bei uns stehen Ihnen viele Möglichkeiten offen.</p>\n<p>💆‍♂️ <strong>Gesundheit geht vor</strong> – Wir haben stets ein offenes Ohr für Sie: Schnelle Arzttermine, Massagen im Büro und viele weitere Gesundheitsangebote (z. B. Fitnessstudio oder Yoga-Kurse) stehen Ihnen zur Verfügung.</p>\n<p>🎉 <strong>Gemeinsame Erlebnisse</strong> – Ob Segeln an Deck, Pizza backen oder ein Adrenalinkick im Phantasialand – wir wissen, was es braucht, damit Ihr nächster Betriebsausflug unvergesslich wird.</p>\n<p>🏖️ <strong>Urlaub, bis die Schwarte kracht</strong> – Pssst … wir müssen leise sein, sonst gibt es einen Aufschrei in den Büros unserer Konkurrenz. Denn bei uns stehen Ihnen bis zu 36 Urlaubstage zur Verfügung.</p>\n<p>Ab der ersten Sekunde legen wir Wert auf einen unkomplizierten und schnellen Bewerbungsprozess – ohne Hürden und mit möglichst wenig Aufwand für Sie.</p>\n<p>Schreiben Sie uns einfach eine kurze Nachricht – wir freuen uns auf Sie und Ihr Interesse. Selbstverständlich nehmen wir uns alle Zeit, um Sie kennenzulernen – gerne bei einem frischen Cappuccino oder einem leckeren Keks.</p>\n<p>Viele Grüße aus Koblenz</p>\n<p>Find <a href=\"https://www.arbeitnow.com/\">Jobs in Germany</a> on Arbeitnow</a>"
-    }
-  ],
-  "applications": [
-    {
-      "id": "4b94",
-      "userId": "1",
-      "offerId": "prufungsassistent-in-der-wirtschaftsprufung-und-steuerberatung-duisburg-308295",
-      "title": "Prüfungsassistent (m/w/d) in der Wirtschaftsprüfung und Steuerberatung",
-      "company": "NRT Niederrheinische Treuhand GmbH",
-      "location": "Duisburg",
-      "url": "https://www.arbeitnow.com/jobs/companies/nrt-niederrheinische-treuhand-gmbh/prufungsassistent-in-der-wirtschaftsprufung-und-steuerberatung-duisburg-308295",
-      "status": "en_attente",
-      "notes": "",
-      "dateAdded": "2026-02-23T09:45:25.882Z"
-    },
-    {
-      "id": "ef49",
-      "userId": "5d97",
-      "offerId": "prufungsassistent-in-der-wirtschaftsprufung-und-steuerberatung-duisburg-308295",
-      "title": "Prüfungsassistent (m/w/d) in der Wirtschaftsprüfung und Steuerberatung",
-      "company": "NRT Niederrheinische Treuhand GmbH",
-      "location": "Duisburg",
-      "url": "https://www.arbeitnow.com/jobs/companies/nrt-niederrheinische-treuhand-gmbh/prufungsassistent-in-der-wirtschaftsprufung-und-steuerberatung-duisburg-308295",
-      "status": "en_attente",
-      "notes": "",
-      "dateAdded": "2026-02-23T14:37:09.836Z"
-    },
-    {
-      "id": "8cd7",
-      "userId": "5d97",
-      "offerId": "software-engineer-ios-core-product-berlin-germany-180687",
-      "title": "Software Engineer, iOS Core Product - Berlin, Germany",
-      "company": "Speechify",
-      "location": "Berlin, Berlin, Germany",
-      "url": "https://www.arbeitnow.com/jobs/companies/speechify/software-engineer-ios-core-product-berlin-germany-180687",
-      "status": "en_attente",
-      "notes": "",
-      "dateAdded": "2026-02-23T14:37:18.485Z"
-    },
-    {
-      "id": "96a7",
-      "userId": "5d97",
-      "offerId": "sie-haben-einen-soliden-job-wie-schade-fur-sie-steuerfachangestellte-remote-oder-in-koblenz-314432",
-      "title": "Sie haben einen soliden Job? Wie schade für Sie. Steuerfachangestellte (m/w/d) remote oder in Koblenz",
-      "company": "ADVIMED Koblenz Steuerberatungsgesellschaft mbH",
-      "location": "Koblenz",
-      "url": "https://www.arbeitnow.com/jobs/companies/advimed-koblenz-steuerberatungsgesellschaft-mbh/sie-haben-einen-soliden-job-wie-schade-fur-sie-steuerfachangestellte-remote-oder-in-koblenz-314432",
-      "status": "en_attente",
-      "notes": "",
-      "dateAdded": "2026-02-23T14:37:34.789Z"
-    }
-  ]
+  "favoritesOffers": [],
+  "applications": []
 }

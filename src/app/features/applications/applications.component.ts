@@ -43,16 +43,6 @@ export class ApplicationsComponent implements OnInit {
     toast.fire({ icon: 'success', title: 'Statut mis à jour' });
   }
 
-  updateNotes(app: Application, event: any) {
-    const newNote = event.target.value;
-    
-    if (app.notes !== newNote) {
-      this.store.dispatch(AppActions.updateApp({ 
-        app: { ...app, notes: newNote } 
-      }));
-    }
-  }
-
   deleteApp(id: number) {
     Swal.fire({
       title: 'Êtes-vous sûr ?',
