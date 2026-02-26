@@ -2,10 +2,11 @@ import { Routes } from '@angular/router';
 import { Login } from './features/auth/login/login';
 import { Register } from './features/auth/register/register';
 import { authGuard } from './core/guards/auth-guard.guard';
+import { noAuthGuard } from './core/guards/no-auth-guard.guard';
 
 export const routes: Routes = [
-  { path: 'login', component: Login },
-  { path: 'register', component: Register },
+  { path: 'login', component: Login, canActivate: [noAuthGuard] },
+  { path: 'register', component: Register, canActivate: [noAuthGuard] },
   { 
     path: 'jobs', loadComponent: () => import('./features/jobs/job-search/job-search.component')
     .then(m => m.JobSearchComponent)

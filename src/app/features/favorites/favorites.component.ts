@@ -29,10 +29,14 @@ export class FavoritesComponent implements OnInit {
   favorites$ = this.store.select(selectAllFavorites);
   favoritesList = toSignal(this.favorites$, { initialValue: [] as Favorite[] });
 
+  applications$ = this.store.select(selectAllApplications);
+  applicationsList = toSignal(this.applications$, { initialValue: [] as Application[] });
+
   ngOnInit() {
     const userId = this.authService.getCurrentUserId();
     if (userId) {
       this.store.dispatch(FavActions.loadFavorites({ userId }));
+      this.store.dispatch(AppActions.loadApps({ userId }));
     }
   }
 

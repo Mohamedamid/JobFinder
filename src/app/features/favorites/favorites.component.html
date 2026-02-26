@@ -23,7 +23,8 @@
     <app-job-card 
       *ngFor="let fav of favoritesList()"
       [job]="mapToJob(fav)" 
-      [favoritesList]="favoritesList()">
+      [favoritesList]="favoritesList()"
+      [applicationsList]="applicationsList()">
       </app-job-card>
 
   </div>
